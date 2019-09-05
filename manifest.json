@@ -1,0 +1,30 @@
+{
+
+    "manifest_version": 2,
+    "name": "RegexBlock",
+    "version": "0.1",
+   
+    "description": "Block sites using URL pattern matching.",
+    
+    "icons": {
+      "48": "icons/regexblock-48.png"
+    },
+  
+    "background": {
+      "scripts": ["regexblock.js"]
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "48": "icons/regexblock-48.png"
+        },
+        "default_title": "RegexBlock settings"
+    },
+
+    "options_ui": {
+      "page": "options.html"
+    },
+
+    "permissions": ["storage", "tabs"]
+  
+  }
