@@ -2,3 +2,8 @@
     color: red;
     font-size: 150%
 }
+
+#successMsg {
+    color: green;
+    font-size: 150%
+}

@@ -4,7 +4,10 @@ function saveOptions(e) {
     browser.storage.local.set({
       url: readUrls()
     })
+    document.querySelector('#successMsg').innerHTML = 'Saved'
+    document.querySelector('#errorMsg').innerHTML = ''
   } catch(e) {
+    document.querySelector('#successMsg').innerHTML = ''
     document.querySelector('#errorMsg').innerHTML = e.message
   }
 }
@@ -23,14 +26,14 @@ function restoreOptions() {
 
 function readUrls() {
   const input = document.querySelector('#urls').value
-  const urls = input.split('\n')
-  console.log(input)
+  const urls = input.split('\n').map(i => i.trim()).filter(k => /\S/.test(k))
   for (let [index, val] of urls.entries()) {
     if (!isRegexValid(val)) {
       throw Error(`Regex error at line ${index+1}`)
     }
   }
   console.log('Regex all OK')
+  console.log(urls)
   return urls
 }
 
