@@ -4,11 +4,11 @@ function saveOptions(e) {
     browser.storage.local.set({
       url: readUrls()
     })
-    document.querySelector('#successMsg').innerHTML = 'Saved'
-    document.querySelector('#errorMsg').innerHTML = ''
+    document.querySelector('#successMsg').textContent = 'Saved'
+    document.querySelector('#errorMsg').textContent = ''
   } catch(e) {
-    document.querySelector('#successMsg').innerHTML = ''
-    document.querySelector('#errorMsg').innerHTML = e.message
+    document.querySelector('#successMsg').textContent = ''
+    document.querySelector('#errorMsg').textContent = e.message
   }
 }
 

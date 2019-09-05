@@ -25,6 +25,11 @@
       "page": "options.html"
     },
 
-    "permissions": ["storage", "tabs"]
-  
+    "permissions": ["storage", "tabs"],
+
+    "applications": {
+      "gecko": {
+        "id": "{ae37a820-7f0f-4d30-9c4a-e0c266e826a9}"
+      }
+    }  
   }
