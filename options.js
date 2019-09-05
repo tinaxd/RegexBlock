@@ -32,8 +32,8 @@ function readUrls() {
       throw Error(`Regex error at line ${index+1}`)
     }
   }
-  console.log('Regex all OK')
-  console.log(urls)
+  //console.log('Regex all OK')
+  //console.log(urls)
   return urls
 }
 

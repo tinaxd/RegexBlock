@@ -4,7 +4,7 @@
     "name": "RegexBlock",
     "version": "0.1",
    
-    "description": "Block sites using URL pattern matching.",
+    "description": "Url-based web filtering.",
     
     "icons": {
       "48": "icons/regexblock-48.png"

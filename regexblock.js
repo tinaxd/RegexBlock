@@ -5,7 +5,7 @@ function redirectSite(tabId, url) {
 }
 
 function blockSite(tabId) {
-  console.log('Site blocked')
+  //console.log('Site blocked')
   redirectSite(tabId, browser.extension.getURL('blocked.html'))
 }
 
@@ -32,7 +32,7 @@ browser.tabs.onUpdated.addListener((tabId, change, tab) => {
           return
         }
       }
-      console.log('Site allowed')
+      //console.log('Site allowed')
     },
 
     (err) => {
